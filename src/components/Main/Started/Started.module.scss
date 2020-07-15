@@ -1,0 +1,22 @@
+.Started {
+  background-color: var(--dark-violet);
+  background-image: url(../../../img/bg-boost-desktop.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+
+  &__box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+  }
+}

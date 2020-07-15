@@ -1,0 +1,54 @@
+.Footer {
+  background-color: var(--very-dark-blue);
+  color: #ffffff;
+
+  &__box {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 0 0 60%;
+  }
+
+  &__boxes {
+  }
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+    color: var(--grayish-violet);
+  }
+
+  &__items {
+    margin-bottom: 1rem;
+  }
+
+  &__icon {
+    &Sub {
+      height: 3rem;
+      width: 3rem;
+      fill: #ffffff;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,45 @@
+.HeaderBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70rem;
+
+  & > * {
+    flex: 1;
+  }
+
+  &__left {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    & button {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__heading {
+    font-size: 7.5rem;
+    color: var(--very-dark-violet);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+  }
+
+  &__paragraph {
+    color: var(--grayish-violet);
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  &__right {
+    height: 100%;
+    background-image: url(../../../img/illustration-working.svg);
+    background-size: 120%;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    transform: translateX(17.5%);
+  }
+}

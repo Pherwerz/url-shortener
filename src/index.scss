@@ -1,0 +1,52 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --btn-bg: hsl(180, 66%, 49%);
+  --dark-violet: hsl(257, 27%, 26%);
+  --valid-input: hsl(0, 87%, 67%);
+  --gray: hsl(0, 0%, 95%);
+  --grayish-violet: hsl(257, 7%, 63%);
+  --very-dark-blue: hsl(255, 11%, 22%);
+  --very-dark-violet: hsl(260, 8%, 14%);
+}
+
+@mixin respond($break-point) {
+  @if $break-point == phone {
+    @media only screen and (max-width: 43.75em) {
+      @content;
+    }
+  }
+  @if $break-point == mid {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    }
+  }
+  @if $break-point == sm {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+}

@@ -16,7 +16,7 @@ const lists = [
   },
   {
     title: 'Company',
-    list: ['About', 'Our Team', 'Careers', 'Contact;']
+    list: ['About', 'Our Team', 'Careers', 'Contact']
   }
 ];
 
@@ -59,10 +59,14 @@ const footer = props => (
 
     <div className={classes.attribution}>
       Challenge by{' '}
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         Frontend Mentor
       </a>{' '}
-      . Coded by <a href="#">Adebayo Fawaz</a>.
+      . Coded by <a href="pherwerz.github.io">Adebayo Fawaz</a>.
     </div>
   </footer>
 );

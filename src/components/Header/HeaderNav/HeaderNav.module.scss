@@ -3,14 +3,34 @@
   align-items: center;
   padding: 3rem 0;
 
+  @media only screen and (max-width: 43.75rem) {
+    padding: 6rem 0;
+  }
+
+  &__logo {
+    width: 15%;
+
+    @media only screen and (max-width: 43.75rem) {
+      width: 30%;
+    }
+  }
+
   & > *:not(:last-child) {
     margin-right: 3rem;
+
+    @media only screen and (max-width: 43.75rem) {
+      margin-right: 0;
+    }
   }
 
   &__list {
     flex: 1;
     list-style: none;
     display: flex;
+
+    @media only screen and (max-width: 43.75rem) {
+      display: none;
+    }
   }
 
   &__item {
@@ -26,10 +46,20 @@
     font-size: 1.4rem;
     font-weight: 700;
     font-family: inherit;
+
+    @media only screen and (max-width: 43.75rem) {
+      display: none;
+    }
   }
 
   &__link:hover,
   &__link:active {
     color: var(--very-dark-violet);
+  }
+
+  & button {
+    @media only screen and (max-width: 43.75rem) {
+      display: none;
+    }
   }
 }

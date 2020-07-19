@@ -6,17 +6,33 @@
   background-size: cover;
   height: 25rem;
 
+  @media only screen and (max-width: 43.75rem) {
+    background-image: url(../../../img/bg-boost-mobile.svg);
+    height: 50rem;
+    background-position: 0 50%;
+  }
+
   &__box {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     height: 25rem;
+
+    @media only screen and (max-width: 43.75rem) {
+      height: 50rem;
+    }
   }
 
   &__heading {
     font-size: 4rem;
     color: #ffffff;
     margin-bottom: 3rem;
+
+    @media only screen and (max-width: 43.75rem) {
+      font-size: 6rem;
+      margin-bottom: 6rem;
+      text-align: center;
+    }
   }
 }

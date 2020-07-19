@@ -9,6 +9,12 @@
   color: white;
   cursor: pointer;
 
+  @media only screen and (max-width: 43.75rem) {
+    padding: 2rem 6rem;
+    font-size: 2.8rem;
+    border-radius: 6rem;
+  }
+
   &:hover {
     background-color: hsl(180, 66%, 69%);
   }

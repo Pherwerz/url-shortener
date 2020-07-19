@@ -10,24 +10,43 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100%;
-  margin-bottom: 5rem;
+
+  @media only screen and (max-width: 43.75rem) {
+    background-image: url(../../../img/bg-shorten-mobile.svg);
+    border-radius: 2rem;
+    background-size: 70%;
+    background-position: top right;
+  }
 
   &__form {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90%;
+
+    @media only screen and (max-width: 43.75rem) {
+      flex-flow: column;
+      align-items: stretch;
+    }
   }
 
   &__text {
     height: 6rem;
     flex: 1;
-    margin-right: 02rem;
+    margin-right: 2rem;
     border-radius: 1rem;
     border: none;
     font-size: 1.8rem;
     font-family: inherit;
     padding-left: 2rem;
+
+    @media only screen and (max-width: 43.75rem) {
+      flex: none;
+      font-size: 3.6rem;
+      height: 10rem;
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
 
     &::-webkit-input-placeholder {
       padding-left: 4rem;
@@ -45,5 +64,11 @@
     font-family: inherit;
     height: 6rem;
     width: 20rem;
+
+    @media only screen and (max-width: 43.75rem) {
+      height: 10rem;
+      width: auto;
+      font-size: 3.6rem;
+    }
   }
 }

@@ -1,0 +1,78 @@
+.Result {
+  margin-bottom: 10rem;
+
+  @media only screen and (max-width: 43.75rem) {
+    margin-bottom: 20rem;
+  }
+
+  &__res {
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    padding: 2rem;
+
+    @media only screen and (max-width: 43.75rem) {
+      margin-bottom: 4rem;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & p {
+      @media only screen and (max-width: 43.75rem) {
+        margin-bottom: 5rem;
+      }
+    }
+
+    @media only screen and (max-width: 43.75rem) {
+      flex-flow: column;
+      justify-content: stretch;
+      align-items: stretch;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 43.75rem) {
+      flex-flow: column;
+      font-size: 2.5rem;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    & p {
+      margin-right: 3rem;
+      color: var(--btn-bg);
+
+      @media only screen and (max-width: 43.75rem) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+    }
+
+    & button {
+      border-radius: 1rem;
+      font-size: 1.8rem;
+      font-family: inherit;
+      height: 5rem;
+      width: 13rem;
+      font-weight: 400;
+
+      @media only screen and (max-width: 43.75rem) {
+        height: 7rem;
+        width: auto;
+        font-size: 3.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
